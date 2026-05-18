@@ -13,6 +13,12 @@ This repository contains:
 
 ---
 
+# Goal
+
+Building practical offensive security skills and documenting the learning process through hands-on labs and real tooling.
+
+---
+
 # Labs Completed & Tools Used
 
 - BLANK
@@ -33,8 +39,3 @@ This repository contains:
 07-webapp-enum/
 ```
 
----
-
-# Goal
-
-Building practical offensive security skills and documenting the learning process through hands-on labs and real tooling.
