@@ -13,72 +13,11 @@ This repository contains:
 
 ---
 
-# Current Focus
+# Labs Completed & Tools Used
 
-- Active Directory
-- Internal network enumeration
-- Privilege escalation
-- Web application testing
-- OSINT methodology
+- BLANK
+- BLANK
 
----
-
-# Skills & Topics
-
-## Networking
-- TCP/IP
-- DNS
-- SMB
-- Common ports/protocols
-- Packet analysis with Wireshark
-
-## Linux
-- Bash
-- Permissions
-- Linux privilege escalation
-- Service enumeration
-
-## Windows / AD
-- SMB enumeration
-- Kerberos
-- BloodHound
-- Responder
-- NTLM attacks
-- Lateral movement
-
-## Web Application Security
-- XSS
-- SQL Injection
-- File upload vulnerabilities
-- Command injection
-- Burp Suite
-
-## OSINT
-- Google dorking
-- Username enumeration
-- Metadata analysis
-- Recon-ng
-
----
-
-# Labs Completed
-
-##Kioptrix:
-
-
----
-
-# Tools Used
-
-- Nmap
-- Burp Suite
-- Wireshark
-- BloodHound
-- CrackMapExec
-- Responder
-- Gobuster
-- ffuf
-- Impacket
 
 ---
 
