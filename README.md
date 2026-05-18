@@ -86,13 +86,12 @@ This repository contains:
 
 ```txt
 01-networking/
-02-linux/
-03-windows/
-04-web-applications/
-05-osint/
+02-reconnaissance/
+03-scan-and-enum/
+04-exploitation-basics/
+05-labs/
 06-active-directory/
-07-labs/
-08-scripting/
+07-webapp-enum/
 ```
 
 ---
