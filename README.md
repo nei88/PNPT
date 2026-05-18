@@ -1,50 +1,102 @@
-# PNPT
-My progress in studying Practical Network Penetration Tester course:
+# PNPT Journey
 
-# Networking & OSINT Foundations
+Documenting my progress through practical penetration testing, Active Directory exploitation, networking, OSINT, and web application security.
 
-## Networking
-
-Studied foundational networking concepts essential for penetration testing and security assessments, including:
-
-- IP addressing
-- MAC addressing
-- TCP/UDP communication
-- the TCP three-way handshake
-- common ports and protocols
-- the OSI model
-- subnetting and network segmentation
-
-Hands-on understanding of:
-- network communication fundamentals
-- packet flow analysis
-- protocol identification
-- service enumeration concepts
-- subnet calculation and internal network structure
-
-Focused on building a strong understanding of how systems communicate across networks and how networking concepts apply during reconnaissance, enumeration, and exploitation phases of penetration testing.
+This repository contains:
+- Lab writeups
+- Enumeration methodology
+- Pentesting notes
+- Cheat sheets
+- Tool usage
+- Scripts and automation
+- Active Directory attack notes
 
 ---
 
-## OSINT & Passive Reconnaissance
+# Current Focus
 
-Studied passive reconnaissance and OSINT methodologies used during penetration testing engagements, including:
+- Active Directory
+- Internal network enumeration
+- Privilege escalation
+- Web application testing
+- OSINT methodology
 
-- hunter.io
-- target profiling
-- attack surface mapping
-- email discovery
-- breached credential analysis
-- subdomain enumeration
-- website technology fingerprinting
-- Google dorking
-- social media intelligence gathering (SOCMINT)
+---
 
-Hands-on experience with:
+# Skills & Topics
+
+## Networking
+- TCP/IP
+- DNS
+- SMB
+- Common ports/protocols
+- Packet analysis with Wireshark
+
+## Linux
+- Bash
+- Permissions
+- Linux privilege escalation
+- Service enumeration
+
+## Windows / AD
+- SMB enumeration
+- Kerberos
+- BloodHound
+- Responder
+- NTLM attacks
+- Lateral movement
+
+## Web Application Security
+- XSS
+- SQL Injection
+- File upload vulnerabilities
+- Command injection
 - Burp Suite
-- DeHashed
-- Breach-Parse
-- DNS/WHOIS enumeration
-- passive web reconnaissance techniques
 
-Focused on identifying exposed assets, public infrastructure, credential leaks, organizational intelligence relevant to security assessments and emails.
+## OSINT
+- Google dorking
+- Username enumeration
+- Metadata analysis
+- Recon-ng
+
+---
+
+# Labs Completed
+
+##Kioptrix:
+
+
+---
+
+# Tools Used
+
+- Nmap
+- Burp Suite
+- Wireshark
+- BloodHound
+- CrackMapExec
+- Responder
+- Gobuster
+- ffuf
+- Impacket
+
+---
+
+# Repository Structure
+
+```txt
+01-networking/
+02-linux/
+03-windows/
+04-web-applications/
+05-osint/
+06-active-directory/
+07-labs/
+08-scripting/
+```
+
+---
+
+# Goal
+
+Building practical offensive security skills and documenting the learning process through hands-on labs and real tooling.
