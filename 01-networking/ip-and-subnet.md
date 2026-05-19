@@ -124,6 +124,28 @@ Reserved addresses:
 
 ---
 
+# IPv4, IPv6 & NAT
+
+IPv4 uses 32-bit addressing:
+
+```text
+2^32 = 4.3 billion addresses
+```
+
+Due to internet growth, cloud infrastructure, and billions of connected devices, IPv4 addresses became limited and began running out.
+
+To solve this, IPv6 was introduced using 128-bit addressing, providing a massively larger address space.
+
+Example IPv6 address:
+
+```text
+2001:0db8:85a3:0000:0000:8a2e:0370:7334
+```
+
+IPv4 is still heavily used because of NAT (Network Address Translation), which allows multiple private devices to share a single public IP address.
+
+---
+
 # Pentesting Relevance
 
 ## Internal Network Segmentation
