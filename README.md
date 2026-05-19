@@ -1,6 +1,7 @@
 # PNPT Course Progress Portfolio
 
 > Documentation of networking, enumeration, Active Directory, web application testing, and hands-on lab work completed throughout PNPT training and self-study.
+### For Recruiters, this portfolio displays the scope of my education
 
 ---
 
