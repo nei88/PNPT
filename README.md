@@ -31,6 +31,9 @@ Building practical offensive security skills and documenting the learning proces
 
 ```txt
 01-networking/
+├── [ip-and-subnet.md](./01-networking/ip-and-subnet.md)
+├── [tcp-udp-common-ports.md](./01-networking/tcp-udp-common-ports.md)
+└── [osi-model-and-mac-addresses.md](./01-networking/osi-model-and-mac-addresses.md)
 02-reconnaissance/
 03-scan-and-enum/
 04-exploitation-basics/
