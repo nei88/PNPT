@@ -1,36 +1,28 @@
 # IP Addressing & Subnetting — PNPT Notes
 
-> Focused networking notes from my Practical Network Penetration Tester (PNPT) studies.  
-> Emphasis on subnetting, internal network enumeration, segmentation, and Active Directory environments.
+> Networking concepts reviewed during PNPT training with focus on internal enumeration, segmentation, and Active Directory environments.
 
 ---
 
-# Why This Matters in Pentesting
+# Why Networking Matters in Pentesting
 
-Networking knowledge directly impacts:
-- Internal enumeration
-- Host discovery
+Strong networking knowledge improves:
+- Internal host discovery
+- Network mapping
 - Lateral movement
-- VLAN traversal
-- Firewall analysis
-- Active Directory attacks
-- Pivoting between segmented networks
-
-Misunderstanding subnetting can lead to:
-- Missed hosts
-- Incorrect scan scope
-- Failed routing/pivoting
-- Poor network visibility
+- Pivoting between subnets
+- Firewall and ACL analysis
+- Active Directory enumeration
 
 ---
 
-# Private IP Ranges
+# Private IPv4 Ranges
 
-| Range | CIDR | Usage |
+| Range | CIDR | Common Usage |
 |---|---|---|
-| 10.0.0.0 | /8 | Large enterprise networks |
+| 10.0.0.0 | /8 | Large enterprise environments |
 | 172.16.0.0 - 172.31.255.255 | /12 | Medium internal networks |
-| 192.168.0.0 | /16 | Home/small office environments |
+| 192.168.0.0 | /16 | Home and small office networks |
 
 ---
 
@@ -38,10 +30,10 @@ Misunderstanding subnetting can lead to:
 
 | Address | Purpose |
 |---|---|
-| 127.0.0.1 | Loopback interface |
-| 0.0.0.0 | Default route / unspecified |
-| 169.254.x.x | APIPA (DHCP failure) |
-| 255.255.255.255 | Broadcast address |
+| 127.0.0.1 | Loopback |
+| 0.0.0.0 | Default route |
+| 169.254.x.x | APIPA / DHCP failure |
+| 255.255.255.255 | Broadcast |
 
 ---
 
@@ -54,7 +46,7 @@ Misunderstanding subnetting can lead to:
 ```
 
 - `/24` = 24 network bits
-- Remaining 8 bits are host bits
+- Remaining 8 bits are available for hosts
 
 Subnet mask:
 
@@ -66,14 +58,14 @@ Subnet mask:
 
 # Common CIDR Sizes
 
-| CIDR | Subnet Mask | Total Addresses | Usable Hosts |
-|---|---|---|---|
-| /24 | 255.255.255.0 | 256 | 254 |
-| /25 | 255.255.255.128 | 128 | 126 |
-| /26 | 255.255.255.192 | 64 | 62 |
-| /27 | 255.255.255.224 | 32 | 30 |
-| /28 | 255.255.255.240 | 16 | 14 |
-| /30 | 255.255.255.252 | 4 | 2 |
+| CIDR | Subnet Mask | Usable Hosts |
+|---|---|---|
+| /24 | 255.255.255.0 | 254 |
+| /25 | 255.255.255.128 | 126 |
+| /26 | 255.255.255.192 | 62 |
+| /27 | 255.255.255.224 | 30 |
+| /28 | 255.255.255.240 | 14 |
+| /30 | 255.255.255.252 | 2 |
 
 ---
 
@@ -89,15 +81,11 @@ Reserved addresses:
 
 ---
 
-# Example Subnet Calculation
-
-## Target Network
+# Example Calculation
 
 ```text
 192.168.1.0/27
 ```
-
-## Calculation
 
 ```text
 32 - 27 = 5 host bits
@@ -132,40 +120,20 @@ IPv4 uses 32-bit addressing:
 2^32 = 4.3 billion addresses
 ```
 
-Due to internet growth, cloud infrastructure, and billions of connected devices, IPv4 addresses became limited and began running out.
+Due to internet growth and large-scale infrastructure, IPv4 addresses became limited.
 
-To solve this, IPv6 was introduced using 128-bit addressing, providing a massively larger address space.
+IPv6 was introduced using 128-bit addressing to provide a significantly larger address space.
 
-Example IPv6 address:
-
-```text
-2001:0db8:85a3:0000:0000:8a2e:0370:7334
-```
-
-IPv4 is still heavily used because of NAT (Network Address Translation), which allows multiple private devices to share a single public IP address.
+IPv4 is still heavily used because NAT (Network Address Translation) allows multiple private devices to share a single public IP address.
 
 ---
 
-# Pentesting Relevance
+# Practical Notes
 
-## Internal Network Segmentation
-
-Subnetting defines:
-- Broadcast domains
-- VLAN boundaries
-- ACL/firewall scope
-- Reachable hosts
-
----
-
-## Enumeration Impact
-
-Subnet awareness improves:
-- Nmap scan accuracy
-- Host discovery
-- Route identification
-- Internal pivoting
-- Lateral movement strategy
+- Used subnet calculations during internal lab enumeration
+- Practiced host discovery against different subnet ranges
+- Used `nmap -sn` to identify live hosts within internal networks
+- Observed segmented subnet structures in Active Directory labs
 
 ---
 
@@ -174,13 +142,10 @@ Subnet awareness improves:
 ## Linux
 
 ```bash
-ifconfig
-arpscan
-netdiscover
 ip a
+ip route
+arp -a
 ```
-
----
 
 ## Windows
 
@@ -192,36 +157,25 @@ arp -a
 
 ---
 
-# Quick Notes
-
-- Routers operate at Layer 3
-- ARP operates at Layer 2
-- NAT translates private to public IPs
-- Smaller subnets reduce broadcast traffic
-- Enterprise environments commonly use segmented subnet structures
-
----
-
 # Key Takeaways
 
 - CIDR notation defines network size
 - Subnetting controls communication boundaries
-- Strong subnetting knowledge improves internal reconnaissance
-- Understanding network segmentation is critical for Active Directory assessments
+- Smaller subnets improve segmentation and reduce broadcast traffic
+- Understanding subnetting is critical for internal pentesting and Active Directory environments
 
 ---
 
-# Applied Knowledge
+# Tools Referenced
 
-Topics reviewed and practiced throughout PNPT training and lab environments:
+- Nmap
+- Wireshark
+- tcpdump
+- netcat
 
-- IP addressing & subnetting
-- CIDR calculations
-- Network segmentation concepts
-- TCP/IP fundamentals
-- Common ports & protocols
-- Internal network enumeration
-- Host discovery methodologies
-- Active Directory network fundamentals
-- Routing & pivoting concepts
-- Packet and traffic analysis basics
+---
+
+# Author
+
+**Gegi**  
+PNPT Progress Portfolio
