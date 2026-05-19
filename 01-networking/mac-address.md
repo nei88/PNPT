@@ -1,4 +1,4 @@
-## MAC Address Fundamentals (Layer 2 Concept)
+## MAC Address Fundamentals (OSI Layer 2 Concept)
 
 A MAC (Media Access Control) address is a unique hardware identifier assigned to a network interface card (NIC).
 
@@ -90,7 +90,7 @@ MAC addresses can provide useful intelligence during internal enumeration:
 
 ## Key Takeaways
 
-- MAC addresses operate at Layer 2 (Data Link Layer)
+- MAC addresses operate at OSI Layer 2 (Data Link Layer)
 - They are only used within local networks (not routable)
 - IP addresses are translated into MAC addresses via ARP
 - ARP is a key target for MITM attacks in internal environments
