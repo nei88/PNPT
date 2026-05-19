@@ -188,12 +188,17 @@ arp -a
 
 ---
 
-# Status
+# Applied Knowledge
 
-- [x] CIDR notation
-- [x] Basic subnetting
-- [x] Network/broadcast calculations
-- [x] Internal segmentation concepts
-- [ ] Advanced subnetting
-- [ ] VLAN analysis
-- [ ] IPv6 networking
+Topics reviewed and practiced throughout PNPT training and lab environments:
+
+- IP addressing & subnetting
+- CIDR calculations
+- Network segmentation concepts
+- TCP/IP fundamentals
+- Common ports & protocols
+- Internal network enumeration
+- Host discovery methodologies
+- Active Directory network fundamentals
+- Routing & pivoting concepts
+- Packet and traffic analysis basics
