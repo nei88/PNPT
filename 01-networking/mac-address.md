@@ -2,7 +2,7 @@
 
 A MAC (Media Access Control) address is a unique hardware identifier assigned to a network interface card (NIC).
 
-It operates at Layer 2 (Data Link Layer) and is used for communication inside a local network (LAN).
+It operates at OSI Layer 2 (Data Link Layer) and is used for communication inside a local network (LAN).
 
 Format:
 
@@ -32,7 +32,7 @@ When a device wants to communicate with another device on the same network:
 1. It checks if the destination IP is local
 2. If yes, it uses ARP (Address Resolution Protocol)
 3. ARP resolves the IP address to a MAC address
-4. Communication happens using Ethernet frames (Layer 2)
+4. Communication happens using Ethernet frames (OSI Layer 2)
 
 Mapping:
 
@@ -42,7 +42,7 @@ IP address → MAC address (via ARP)
 
 ## ARP (Address Resolution Protocol)
 
-ARP is the mechanism that links Layer 3 (IP) to Layer 2 (MAC).
+ARP is the mechanism that links OSI Layer 3 (IP) to OSI Layer 2 (MAC).
 
 It maintains a local cache of IP-to-MAC mappings.
 
