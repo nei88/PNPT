@@ -1,5 +1,3 @@
----
-
 ## MAC Address Fundamentals (Layer 2 Concept)
 
 A MAC (Media Access Control) address is a unique hardware identifier assigned to a network interface card (NIC).
