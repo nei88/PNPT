@@ -38,17 +38,17 @@
 ├── [osi-model.md](./01-networking/osi-model.md)  
 └── [tcp-udp-common-ports.md](./01-networking/tcp-udp-common-ports.md)
 
-02-reconnaissance/  
+### 02-reconnaissance/  
 
-03-scan-and-enum/  
+### 03-scanning-enumeration/  
 
-04-exploitation-basics/  
+### 04-exploitation-basics/  
 
-05-labs/  
+### 05-labs/  
 
-06-active-directory/  
+### 06-active-directory/  
 
-07-webapp-enum/  
+### 07-web-application-enumeration/  
 
 ---
 
