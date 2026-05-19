@@ -33,9 +33,10 @@
 # Repository Structure
 
 ### 01-networking/  
-├── [ip-and-subnet.md](./01-networking/ip-and-subnet.md)  
-├── [tcp-udp-common-ports.md](./01-networking/tcp-udp-common-ports.md)  
-└── [osi-model-and-mac-addresses.md](./01-networking/osi-model-and-mac-addresses.md)  
+├── [ip-and-subnet.md](./01-networking/ip-and-subnet.md)
+├── [mac-address.md](./01-networking/mac-address.md)
+├── [osi-model.md](./01-networking/osi-model.md)
+└── [tcp-udp-common-ports.md](./01-networking/tcp-udp-common-ports.md)
 
 02-reconnaissance/  
 
