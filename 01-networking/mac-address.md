@@ -1,4 +1,4 @@
-## MAC Address Fundamentals (OSI Layer 2 Concept)
+# MAC Address Fundamentals (OSI Layer 2 Concept)
 
 A MAC (Media Access Control) address is a unique hardware identifier assigned to a network interface card (NIC).
 
