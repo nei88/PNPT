@@ -152,9 +152,10 @@ Subnet awareness improves:
 ## Linux
 
 ```bash
+ifconfig
+arpscan
+netdiscover
 ip a
-ip route
-arp -a
 ```
 
 ---
