@@ -1,29 +1,32 @@
-# PNPT Journey
+# PNPT Course Progress Portfolio
 
-Documenting my progress through practical penetration testing, Active Directory exploitation, networking, OSINT, and web application security.
+> Documentation of networking, enumeration, Active Directory, web application testing, and hands-on lab work completed throughout PNPT training and self-study.
 
-This repository contains:
+---
+
+# Skill Overview
+
+- Network Enumeration
+- Service Enumeration
+- SMB/LDAP/Kerberos Enumeration
+- Active Directory Fundamentals
+- Web Application Enumeration
+- Vulnerability Identification
+- Privilege Escalation Fundamentals
+- Internal Network Reconnaissance
+- Linux & Windows Fundamentals
+
+---
+
+# This Repository Contains
+
 - Lab writeups
 - Enumeration methodology
 - Pentesting notes
 - Cheat sheets
-- Tool usage
+- Tool usage documentation
 - Scripts and automation
 - Active Directory attack notes
-
----
-
-# Goal
-
-Building practical offensive security skills and documenting the learning process through hands-on labs and real tooling.
-
----
-
-# Labs Completed & Tools Used
-
-- BLANK
-- BLANK
-
 
 ---
 
@@ -46,3 +49,12 @@ Building practical offensive security skills and documenting the learning proces
 
 07-webapp-enum/  
 
+---
+
+# Labs Completed (PLACEHOLDER CURRENTLY)
+
+| Lab | Platform | Focus Area | Documentation |
+|---|---|---|---|
+| Kioptrix | VulnHub | Enumeration & Exploitation | Coming Soon |
+| Blue | Hack The Box | SMB Exploitation | Coming Soon |
+| Forest | Hack The Box | Active Directory Enumeration | Coming Soon |
